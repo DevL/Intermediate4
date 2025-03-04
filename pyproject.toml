@@ -1,4 +1,3 @@
 # pyproject.toml
 [tool.pytest.ini_options]
-addopts = "-ra --quiet --stepwise --doctest-modules --doctest-continue-on-failure"
-testpaths = ["exercises"]
+addopts = "-ra --doctest-modules --doctest-continue-on-failure"
