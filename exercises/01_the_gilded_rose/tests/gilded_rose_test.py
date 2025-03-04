@@ -5,6 +5,7 @@ from gilded_rose import GildedRose, Item
 def test_the_gilded_rose_can_have_items():
     items = [Item(name="Instructor", sell_in=3, quality=5)]
     store = GildedRose(items)
+    assert store.items == items
 
 
 def test_the_gilded_rose_can_have_items_that_age():
@@ -23,4 +24,6 @@ def test_checking_updated_items_using_equality():
     items = [Item(name="Instructor", sell_in=3, quality=5)]
     store = GildedRose(items)
     store.update_quality()
-    assert store.items == Item(name="Instructor", sell_in=2, quality=4)
+
+    expected_items = [Item(name="Instructor", sell_in=2, quality=4)]
+    assert store.items == expected_items

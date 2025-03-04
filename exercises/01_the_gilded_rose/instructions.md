@@ -20,8 +20,11 @@ Even if it is tempting to implement equality methods for the `GildedRose` and `I
 
 ## Build a safety harness
 
+**NB:** Never trust a test you have not seen fail. When bringing working code under test, this might entail deliberatly breaking the test _temporarily_, e.g. asserting the reverse to what you intend to test. Once you have seen the test work, restore it to working order again.
+
 3. Based on the requirements _and_ the existing code, write tests to capture the _current_ behaviour.
-  * If the requirements and the actual code's behaviour differ, add an intentionally failing test for it, but mark it using `pytest.mark.xfail` as such.
+  * _If_ the requirements and the actual code's behaviour differ, add an intentionally failing test for it, but mark it using `pytest.mark.xfail` as such.
+  * Hint: you may wish to introduce helper functions to reduce the duplication and clutter.
 4. When you feel confident that you have covered all the expected and current behaviour with tests, compare your tests with another student. Discuss what, why, and how you test the various behaviours.
   * If you are working in pairs or groups, this will come naturally. Make sure to rotate who explains a given test case!
 
