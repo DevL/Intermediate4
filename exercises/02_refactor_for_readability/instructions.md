@@ -32,7 +32,8 @@ A few examples of refactoring moves to make include:
 * Break out low-level logic into private methods and functions that are called from higher-level logic.
   * _Abstractions flow to the top, details sink to the bottom._
 * Extracting a new type of object.
-  * Could `MagicItem` be a subclass of `Item`? Would that make sense?
+  * Could `NormalItem` be a subclass of `Item`? Would that make sense?
+  * Could the update process of a certain kind of item be an object? E.g. `AgedBrieUpdate`?
 * Moving logic and responsibilities from one place to another.
   * Could `Item` objects know the rules for how they should age? Would that make sense? 
 
