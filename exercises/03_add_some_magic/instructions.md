@@ -27,6 +27,8 @@
 5. Of course someone wants to manipulate the contents of a store using `pandas`. Add a method to export a `GildedRose` instance as a [Pandas `DataFrame`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html).
 * Gold star if...well, you know the drill by now.
 
+6. It would change the behaviour to fix it, but the `__repr__` method of the `Item` class does not behave as is conventional for Python classes. What would a idiomatic implementation look like? Remember to write tests before you change the current implementation.
+ 
 ## Looking for inspiration?
 
 See [_concepts/leap_year/03a_the_excel_bug.md_](../../concepts/leap_year/03a_the_excel_bug.md).
