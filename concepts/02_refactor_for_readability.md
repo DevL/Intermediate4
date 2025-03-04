@@ -1,6 +1,6 @@
 # 02 - Refactoring for readability
 
-A refactoring changes _structure_, not _behaviour_. A prime reason for refactoring is to make future changes easier to make. [Kent Beck](https://kentbeck.com) eloquently puts this as "first make the change easy, then make the easy change".
+A refactoring changes _structure_, not _behaviour_. A prime reason for refactoring is to make future changes easier to make. [Kent Beck](https://kentbeck.com) eloquently puts this as "first make the change easy (this might be hard), then make the easy change".
 
 There are many named refactoring moves that can be made. [Martin Fowler](https://martinfowler.com) lists plenty of them in his [catalogue](https://refactoring.com/catalog). Be aware that several of them have different names in other contexts. For example, your code editor may refer to some of them with slightly different names.
 
@@ -13,6 +13,10 @@ There are many named refactoring moves that can be made. [Martin Fowler](https:/
 * extract/introduce function/method
 * replace primitive with object
     * e.g. instead of passing around an `int` denoting a monetary value in cents, we create and use a `Money` class.
+
+## A few words of caution
+
+* Duplication is far cheaper than the wrong abstraction – wait for a while before deduplicating your code.
 
 ## Exercises
 

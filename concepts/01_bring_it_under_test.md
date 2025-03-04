@@ -40,6 +40,10 @@ In our case, the `Gilded Rose` kata comes with a requirements specification. It 
 
 That said, once that has been done, making sure that there are tests that follow the specification can be an excellent way of identifying any bugs that may or may not be present in the existing code.
 
+### Test helper functions
+
+Do not hesitate to introduce helper functions to make your tests more readable and less cluttered.
+
 ## Exercises
 
 See [_exercises/01_the_gilded_rose/instructions.md_](../exercises/01_the_gilded_rose/instructions.md) for the exercises.
