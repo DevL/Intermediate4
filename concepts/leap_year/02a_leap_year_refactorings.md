@@ -229,7 +229,7 @@ def is_leap_year(year: int) -> bool:
 
 ## Properties
 
-While we are at it, let us turn those cases into properties so that we need not use paranthesis.
+While we are at it, let us turn those cases into properties so that we need not use parenthesis.
 
 ```python
 class Year:
