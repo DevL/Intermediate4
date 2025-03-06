@@ -2,4 +2,3 @@ mypy
 pandas
 pytest
 pytest-clarity
-requests

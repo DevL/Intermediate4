@@ -5,5 +5,4 @@ def test_pytest_works():
 def test_imports_work():
     import mypy
     import pandas
-    import requests
     import typing_extensions
